@@ -41,8 +41,6 @@ pygame.display.update()
 
 pygame.joystick.init()
 
-
-
 joystick_count = pygame.joystick.get_count()
 print("Number of joysticks: {}".format(joystick_count) )
 for i in range(joystick_count):
@@ -110,6 +108,3 @@ for button in N3DS_Buttons: server.unpress(button)
 for i in range(1,50):
         server.send()
 pygame.quit()
-        
-        
-
